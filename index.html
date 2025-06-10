@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>商品详情</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh; /* 关键修改1：使用视口高度 */
+            display: flex;     /* 关键修改2：启用弹性布局 */
+            padding: 20px;
+        }
+
+        .product-container {
+            width: 100%;      /* 关键修改3：宽度填满 */
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            position: relative;
+        }
+
+        .brand-info {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .brand-name {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        .brand-title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 8px;
+            min-width: 6em; /* 统一标题宽度 */
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        
+        <div class="brand-info">
+            <div class="brand-title">【产品名称】</div>
+            <div class="brand-name">福鼎白茶</div>
+        </div>
+       
+        <div class="brand-info">
+            <div class="brand-title">【配料】</div>
+            <div class="brand-name">福鼎大毫茶、大白茶</div>
+        </div>
+
+        <div class="brand-info">
+            <div class="brand-title">【等级】</div>
+            <div class="brand-name">一级</div>
+        </div>
+
+        <div class="brand-info">
+            <div class="brand-title">【原料年份】</div>
+            <div class="brand-name">2018年白牡丹</div>
+        </div>
+
+        <div class="brand-info">
+            <div class="brand-title">【净含量】</div>
+            <div class="brand-name">250克</div>
+        </div>
+
+        <div class="brand-info">
+            <div class="brand-title">【建议零售价】</div>
+            <div class="brand-name">988元</div>
+        </div>
+
+
+    </div>
